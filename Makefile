@@ -20,9 +20,10 @@ dotfiles:
 	ln -fn $(CURDIR)/gitignore $(HOME)/.gitignore;
 
 etc:
+	sudo mkdir -p /etc/X11/xorg.conf.d /etc/docker/seccomp; \
 	for file in $(shell find $(CURDIR)/etc -type f -not -name ".*.swp"); do \
 		f=$$(echo $$file | sed -e 's|$(CURDIR)||'); \
-		sudo ln -f $$file $$f; \
+		sudo ln -sf $$file $$f; \
 	done
 	systemctl --user daemon-reload
 	sudo systemctl daemon-reload
