@@ -32,3 +32,7 @@ done
 
 # print a fortune when the terminal opens
 #fortune -a -s | lolcat
+
+
+export SSH_AUTH_SOCK=/tmp/ssh-qUZpsZM0J8pF/agent.5568
+export SSH_AGENT_PID=5569

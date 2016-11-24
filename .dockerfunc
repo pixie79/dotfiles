@@ -158,14 +158,14 @@ chrome(){
 		-v $HOME/Pictures:/root/Pictures \
 		-v $HOME/Torrents:/root/Torrents \
 		-v $HOME/.chrome:/data \
-		-v /dev/shm:/dev/shm \
-		-v /etc/hosts:/etc/hosts \
-		--security-opt seccomp:/etc/docker/seccomp/chrome.json \
 		--device /dev/snd \
 		--device /dev/dri \
 		--device /dev/video0 \
-		--device /dev/usb \
 		--device /dev/bus/usb \
+		-v /dev/shm:/dev/shm \
+		-v /etc/hosts:/etc/hosts \
+		--security-opt seccomp:/etc/docker/seccomp/chrome.json \
+		--device /dev/usb \
 		--group-add audio \
 		--group-add video \
 		--name chrome \
