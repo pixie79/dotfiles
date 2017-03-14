@@ -95,7 +95,10 @@ if [[ -f $HOME/.bash_profile ]]; then
 	source $HOME/.bash_profile
 fi
 
+export TMPDIR=~/tmp
 export SSH_AUTH_SOCK=${HOME}/.gnupg/S.gpg-agent.ssh
+export PATH=$PATH:${HOME}/GIT/blackbox/bin
+export GPG=gpg2
 
 export DRONE_SERVER=https://drone.digital.homeoffice.gov.uk
 export DRONE_TOKEN="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZXh0IjoicGl4aWU3OSIsInR5cGUiOiJ1c2VyIn0.-_llJdCTxgrQOM5NfxIzF2mWLnxyE68QzKIsM4vJ1i0"
@@ -103,4 +106,4 @@ export DRONE_TOKEN="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZXh0IjoicGl4aWU3OSI
 #export DRONE_SERVER=https://drone-gitlab.digital.homeoffice.gov.uk
 #export DRONE_TOKEN="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZXh0IjoibW9sbGl2ZXIiLCJ0eXBlIjoidXNlciJ9.1tCsCpgu7904E8sYEeqs3MA-GahDze2aFMhcZnY8WJU"
 
-export TMPDIR=~/tmp
+

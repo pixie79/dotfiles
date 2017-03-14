@@ -164,7 +164,7 @@
 [user]
 	name = Mark Olliver
 	email = mark@keao.cloud
-	signingkey = 0x4B0E06A8A47373EF
+	signingkey = 4B0E06A8A47373EF
 #[remote "origin"]
 	#fetch = +refs/pull/*/head:refs/remotes/origin/pull/*
 [github]
